@@ -34,7 +34,6 @@ fn main() {
     let x = s.trim().parse().ok().expect("invalid output");
 
     let mut s = String::new();
-
     println!("Enter value of y :");
         
         io::stdin()
