@@ -69,8 +69,8 @@ fn main() {
 
     println!("p.x = {} p.y = {}", p.x(),p.y());
     println!("p1.x = {} p1.y = {}", p1.x(),p1.y());
-    println!("{}",p.distance_from_origin());
-    println!("{}",p1.distance_from_origin());
+    println!("Distance from point1 : {}",p.distance_from_origin());
+    println!("Distance from point2 : {}",p1.distance_from_origin());
 
     let mut point = Vec::new();
 
@@ -78,7 +78,7 @@ fn main() {
     point.push(p1.distance_from_origin());
 
     let result= largest(&point);
-    println!("Farthest Distance from origin {}",result);
+    println!("Farthest Distance from origin is  {}",result);
 }
 
 fn largest<T: PartialOrd + Copy>(list: &[T]) -> T {
